@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: normal;
+  background-color: #B8D0EB;
+  margin: 0;
+  color: white;
+  text-align: justify;
+}
+
+#web {
+  margin: 0 auto;
+  max-width: 90%;
+  background-color: #A663CC;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6f2dbd;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  padding: 1.5%;
+  animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+h1, .subtitle {
+  background-color: #b9faf8;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  background-image: linear-gradient(#b9faf8, #a663cc);
+}
+
+.subtitle {
+  font-size: 3em;
+  background-image: linear-gradient(#a663cc, #b9faf8);
+}
+
+/* nav */
+
+ul {
+    list-style-type: none;
+    background-color: #6f2dbd;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:hover {
+  animation: jump 0.2s;
+}
+
+svg {
+    fill:#a663cc;
+    stroke:#b9faf8;
+    font-family: "VT323", monospace;
+    letter-spacing: 2px;
+    text-anchor: middle;
+}
+
+svg rect {
+    stroke-width: 5;
+}
+
+svg text {
+    fill: #b9faf8;
+    text-transform: uppercase;
+}
+
+a:link {
+  color: #b9faf8;
+}
+
+a:visited {
+  color: #b8d0eb;
+}
+
+a:hover {
+  color: white;
+}
+
+@keyframes jump {
+  50% {
+    transform: translatey(-10px);
+  }
+  to {
+    transform: translatey(0);
+  }
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+main > h2 {
+  margin: 4%;
+}
+
+.content-wrapper h2 {
+  text-shadow: 3px 5px #6f2dbd;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "VT323", monospace;
+  font-variant: small-caps;
+  color: #b9faf8;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+/* main */
+
+main {
+  margin: auto;
+}
+
+section {
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#section2 {
+  align-items: flex-start;
+}
+
+#section2 article {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  max-width: 320px;
+  height: 420px;
+  padding: 1%;
+  margin: 1%;
+  background-color: #6f2dbd;
+  border: 3px solid#B8D0EB;
+  border-radius: 20px;
+  transition: background-color 3s;
+}
+
+#section2 article:hover {
+  transform: scale(1.05);
+  background-color: #B298DC;
+}
+
+section > div {
+max-width: 50%;
+margin: 2%;
+}
+
+#section4 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+#section4 img {
+  max-width: 300px;
+}
+
+/* aside*/
+
+aside {
+  width: 20%;
+  max-height: 360px;
+  margin: 0 1%;
+}
+
+aside form {
+  padding: 5%;
+  background-color: #B298DC;
+  border-radius: 10px;
+}
+
+aside form input {
+  background-color: transparent;
+  border-width: 0px 0px 2px;
+  border-bottom: 1px solid black;
+}
+
+aside form textarea {
+  max-height: 7em;
+  margin: 2% 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+aside form input:focus {
+  outline: none;
+}
+
+aside form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #B8D0EB;
+}
+
+aside form input:valid {
+  border-color: green;
+}
+
+aside form input:invalid {
+  border-color: red;
+}
+
+aside form textarea:valid {
+  box-shadow: 0 0 10px green;
+}
+
+aside form textarea:invalid {
+  box-shadow: 0 0 10px red;
+}
+
+.submit {
+  color: white;
+  background-color: #B8D0EB;
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: #6f2dbd;
+  padding: 1%;
+}
+
+footer img {
+  width: 64px;
+  height: 64px;
+}
+
+.redes div {
+  display: inline-block;
+  padding: 0 0.5%;
+}
+
