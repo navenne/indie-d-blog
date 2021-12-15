@@ -143,6 +143,7 @@ h3 {
 
 .content-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* main */
@@ -167,19 +168,21 @@ section {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  max-width: 320px;
+  flex-basis: 320px;
   height: 420px;
   padding: 1%;
   margin: 1%;
   background-color: #6f2dbd;
   border: 3px solid#B8D0EB;
   border-radius: 20px;
-  transition: background-color 3s;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  transition: 1s;
 }
 
 #section2 article:hover {
-  transform: scale(1.05);
-  background-color: #b298dc;
+  transform: scale(1.02);
+  color: #b9faf8;
+  box-shadow: 0 6px 12px rgba(111,45,189,0.5), 0 5px 5px rgba(111,45,189,0.47);
 }
 
 section > div {
@@ -194,6 +197,10 @@ section > div {
 
 #section4 img {
   max-width: 300px;
+}
+
+video {
+  padding: 5px;
 }
 
 /* aside*/
@@ -237,7 +244,7 @@ aside form input:focus {
 
 aside form textarea:focus {
   outline: none;
-  box-shadow: 0 0 10px #b8d0eb;
+  box-shadow: 0 0 10px #b9faf8;
 }
 
 aside form input:not(:focus):not(:placeholder-shown):valid {
